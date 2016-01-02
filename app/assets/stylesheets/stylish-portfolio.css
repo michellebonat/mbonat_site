@@ -32,7 +32,7 @@ body {
 /* Custom Button Styles */
 
 .btn-dark {
-    border-radius: 0;
+    border-radius: 15;
     color: #fff;
     background-color: rgba(0,0,0,0.4);
 }
@@ -45,7 +45,7 @@ body {
 }
 
 .btn-light {
-    border-radius: 0;
+    border-radius: 15;
     color: #333;
     background-color: rgb(255,255,255);
 }
