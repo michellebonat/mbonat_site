@@ -244,6 +244,11 @@ hr.small {
     margin: 10px;
 }
 
+/* This changes the background bar color in the call to action section */
+.bg-primary {
+    background-color: #cba64b;
+}
+
 /* Map */
 
 .map {
@@ -257,6 +262,21 @@ hr.small {
 }
 
 /* Contact section aka Footer */
+
+.fa-twitter {
+    color: #95792f;
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    color: #95792f;
+    text-decoration: none;
+}
+
+.fa-github {
+    color: #95792f;
+    text-decoration: none;
+}
 
 footer {
     padding: 100px 0;
