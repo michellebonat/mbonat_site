@@ -1,7 +1,7 @@
-This is the personal website for Michelle Bonat
+This is the code for the personal website for Michelle Bonat, built by Michelle Bonat.
 ================
-See it online at http://michellebonat.com/
-See me on github at https://github.com/michellebonat
+- See it online at http://michellebonat.com/
+- See me on github at https://github.com/michellebonat
 
 
 Some Tools Used in this Application:
