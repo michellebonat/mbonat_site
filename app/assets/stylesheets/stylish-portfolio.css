@@ -86,6 +86,14 @@ hr.small {
     max-width: 100px;
 }
 
+/* Custom Divider classes for spacing */
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
 /* Side Menu */
 
 #sidebar-wrapper {
