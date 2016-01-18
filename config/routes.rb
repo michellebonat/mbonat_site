@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   resources :users
   resources :posts
 
-
   root to: 'visitors#index'
   get 'resume', to: 'visitors#resume'
 
