@@ -3,14 +3,14 @@
 
 <%= form_for :post, url: posts_path do |f| %>
 
-
     <%= form_for :post, url: posts_path do |f| %>
-        <%= f.label :title %><br>
-        <%= f.text_field :title %><br>
 
-        <%= f.label :body %><br>
-        <%= f.text_area :body %><br>
-
-        <%= f.submit %>
-    <% end %>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %><br>
+    <br>
+    <% f.label :body %><br>
+    <% f.text_area :body %><br>
+    <br>
+    <%= f.submit %>
 <% end %>
+
