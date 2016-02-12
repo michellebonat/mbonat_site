@@ -3,9 +3,7 @@ class PostsController < ApplicationController
   before_filter :authenticate, :except => [ :index, :show ]
 
   def index
-
     @posts = Post.all.order('created_at DESC')
-
   end
 
   def new
@@ -34,7 +32,6 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :body)
     end
-
 
   def authenticate
     authenticate_or_request_with_http_basic do |name, password|
