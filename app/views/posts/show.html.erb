@@ -5,14 +5,14 @@
         <br>
         <br>
         <h1 class="title">
-          <%= @post.title %>
+          <%= markdown_to_html @post.title %>
         </h1>
 
         <p class="date">
           Submitted <%= time_ago_in_words(@post.created_at) %> Ago
 
         <p class="body">
-          <%= @post.body %>
+          <%= markdown_to_html @post.body %>
         </p>
       </div>
     </div>
