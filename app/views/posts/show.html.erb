@@ -11,8 +11,9 @@
         <p class="date">
           Submitted <%= time_ago_in_words(@post.created_at) %> Ago
 
-        <p class="body">
+        <h4 class="body">
           <%= markdown_to_html @post.body %>
+        </h4>
         </p>
       </div>
     </div>
