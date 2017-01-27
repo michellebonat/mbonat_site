@@ -1,0 +1,9 @@
+
+%section#about.about
+	.container.panel.panel-default
+		.row
+			.col-lg-12.text-center
+				- @posts.each do |post|
+					.post_wrapper
+						%h2{:class => "title\""}= link_to post.title, post
+						%p.date= post.created_at.strftime("%A, %d %b %Y %l:%M %p")

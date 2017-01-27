@@ -1,21 +1,22 @@
-%section#contact.footer
-	.container
-		.row
-			.col-lg-10.col-lg-offset-1.text-left
-				%br/
-				%br/
-				%h1.title
-					= markdown_to_html @post.title
-				%p.date
-					Submitted #{time_ago_in_words(@post.created_at)} Ago
-				%h4.body
-					= markdown_to_html @post.body
-%section#contact.footer
-	.container
-		.row
-			.col-lg-10.col-lg-offset-1.text-left
-				%br/
-				%h3 Like this? Star it on GitHub
-				%a.btn.btn-dark{:href => "https://github.com/michellebonat/mbonat_site", :target => "_blank"} Star It
-				%br/
-				%br/
+.container
+	.row
+		.col-md-12
+			%section.panel.panel-default
+				.row
+					.col-lg-10.col-lg-offset-1.text-left
+						%br/
+						%br/
+						%h1.title
+							= markdown_to_html @post.title
+						%p.date
+							Submitted #{time_ago_in_words(@post.created_at)} Ago
+						%h4.body
+							= markdown_to_html @post.body
+			%section
+				.row
+					.col-lg-10.col-lg-offset-1.text-left
+						%br/
+						%h3 Like this? Star it on GitHub
+						%a.btn.btn-dark{:href => "https://github.com/michellebonat/mbonat_site", :target => "_blank"} Star It
+						%br/
+						%br/
