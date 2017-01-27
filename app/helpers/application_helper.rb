@@ -5,4 +5,8 @@ module ApplicationHelper
     redcarpet = Redcarpet::Markdown.new(renderer, extensions)
     (redcarpet.render markdown).html_safe
   end
+
+  def active?(page_name)
+    "active" if params[:action] == page_name
+  end
 end
