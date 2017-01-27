@@ -302,3 +302,8 @@ footer {
 .panel-default {
     border-color: #ddd;
 }
+
+.panel-resume {
+    border-color: #ddd;
+    padding: 0px 30px 0px 30px;
+}
