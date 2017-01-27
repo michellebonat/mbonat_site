@@ -1,13 +1,14 @@
 -# navigation styled for Bootstrap 3.0
 %nav.navbar.navbar-default.navbar-fixed-top
   .container
-    .navbar-header
-      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      = link_to 'Home', root_path, class: 'navbar-brand'
+    .ul.navbar-header
+      %li{class: "#{'active' if current_page? (root_path)}", class:'navbar-brand'}
+        = link_to 'Home', root_path
+      %li{class: "#{'active' if current_page? (posts_path)}", class:'navbar-brand'}
+        = link_to 'Blog', posts_path
+      %li{class: "#{'active' if current_page? (resume_path)}", class:'navbar-brand'}
+        = link_to 'Resume', resume_path
+
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
         = render 'layouts/navigation_links'
