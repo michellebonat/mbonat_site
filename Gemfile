@@ -7,6 +7,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'redcarpet'
+gem 'google-analytics-rails', '1.1.0'
 
 group :development, :test do
   gem 'byebug'
