@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   before_filter :authenticate, :except => [ :index, :show ]
 
   def index
-    @meta_title = "Blog about full stack ruby rails software development, startups, and fintech"
+    @meta_title = "Blog about full stack ruby rails programming, startups, and fintech"
     @posts = Post.all.order('created_at DESC')
   end
 
@@ -11,7 +11,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @meta_title = "Blog post on full stack ruby rails software development, startups, and fintech"
+    @meta_title = "Blog post on full stack ruby rails web software development, startups, and fintech"
     @post = Post.find(params[:id])
   end
 
