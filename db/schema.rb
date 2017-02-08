@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170130221627) do
+ActiveRecord::Schema.define(version: 20170207235321) do
 
   create_table "blogit_comments", force: :cascade do |t|
     t.string   "name",       null: false
@@ -54,7 +54,10 @@ ActiveRecord::Schema.define(version: 20170130221627) do
     t.text     "meta_description"
     t.string   "permalink"
     t.boolean  "no_index"
+    t.string   "slug"
   end
+
+  add_index "posts", ["slug"], name: "index_posts_on_slug", unique: true
 
   create_table "taggings", force: :cascade do |t|
     t.integer  "tag_id"
