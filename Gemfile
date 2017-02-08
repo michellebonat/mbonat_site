@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'redcarpet'
 gem 'google-analytics-rails', '1.1.0'
-gem 'friendly_id', '5.0.4'
+gem 'friendly_id'
 
 group :development, :test do
   gem 'byebug'

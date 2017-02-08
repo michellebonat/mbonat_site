@@ -306,7 +306,7 @@ DEPENDENCIES
   devise
   factory_girl_rails
   faker
-  friendly_id (= 5.0.4)
+  friendly_id
   google-analytics-rails (= 1.1.0)
   guard-bundler
   guard-rails
