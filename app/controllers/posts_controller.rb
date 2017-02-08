@@ -12,7 +12,7 @@ class PostsController < ApplicationController
 
   def show
     @meta_title = "Blog post on full stack ruby rails web software development, startups, and fintech"
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
   end
 
   def create
