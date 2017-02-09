@@ -8,7 +8,14 @@
 
         <%= f.label :title %><br>
         <%= f.text_field :title %><br>
-
+        <%= f.label :meta_title %><br>
+        <%= f.text_field :meta_title %><br>
+        <%= f.label :meta_description %><br>
+        <%= f.text_field :meta_description %><br>
+        <%= f.label :permalink %><br>
+        <%= f.text_field :permalink %><br>
+        <%= f.label :no_index %><br>
+        <%= f.check_box :no_index %><br>
         <%= f.label :body %><br>
         <%= f.text_area :body %><br>
 <br>
@@ -16,4 +23,4 @@
     <% end %>
 <% end %>
 
-<br>
+

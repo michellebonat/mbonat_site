@@ -7,24 +7,19 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'redcarpet'
-
-group :development, :test do
-  gem 'byebug'
-end
-
-group :development do
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
-end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'pundit'
 gem 'sendgrid'
-
 gem 'simple_form'
+gem 'google-analytics-rails', '1.1.0'
+gem 'friendly_id'
+
 group :development do
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
   gem 'better_errors'
   gem 'guard-bundler'
   gem 'guard-rails'
@@ -39,6 +34,7 @@ group :development do
 end
 
 group :development, :test do
+  gem 'byebug'
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'rspec-rails'
