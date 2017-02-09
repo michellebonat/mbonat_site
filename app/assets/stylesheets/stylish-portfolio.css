@@ -257,6 +257,11 @@ hr.small {
     background-color: #cba64b;
 }
 
+/* This is the darker gold that also appears on the social icons */
+.bg-primary-dark {
+    background-color: #95792f;
+}
+
 /* Map */
 
 .map {
@@ -293,17 +298,22 @@ footer {
 .panel {
     margin-bottom: 20px;
     background-color: #fff;
-    border: 1px solid transparent;
+    border: 10px solid transparent;
     border-radius: 15px;
     webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
-    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 19px 0 rgba(0,0,0,0.19);
 }
 
 .panel-default {
-    border-color: #ddd;
+    border-color: #cba64b;
 }
 
 .panel-resume {
-    border-color: #ddd;
-    padding: 0px 30px 0px 30px;
+    border-color: #cba64b;
+    padding: 0px 40px 0px 40px;
+}
+
+.panel-post-show {
+    border-color: #cba64b;
+    padding: 0px 30px 10px 30px;
 }
