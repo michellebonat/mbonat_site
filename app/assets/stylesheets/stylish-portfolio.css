@@ -320,10 +320,26 @@ footer {
 
 .container-portfolio {
     width: 1000px;
-    margin: 100px auto;
+    margin: 80px auto;
     padding: 20px;
     background: #737197;
-    background-color: rgba(88, 111, 151, 0.6);
+    background-color: rgba(88, 111, 151, 0.31);
     text-align: center;
-    border-radius: 40px;
+    border-radius: 25px;
+}
+
+.container-inside {
+    width: 800px;
+    margin: 25px 100px 25px 100px;
+    padding: 20px;
+    background: #8c8ab8;
+    background-color: rgba(125, 159, 215, 0.6);
+    text-align: center;
+    border-radius: 25px;
+}
+
+.shadow {
+    -moz-box-shadow:    inset 0 0 8px #000000;
+    -webkit-box-shadow: inset 0 0 8px #000000;
+    box-shadow:         inset 0 0 9px #737197;
 }
