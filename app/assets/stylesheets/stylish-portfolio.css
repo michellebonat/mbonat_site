@@ -317,3 +317,13 @@ footer {
     border-color: #cba64b;
     padding: 0px 30px 10px 30px;
 }
+
+.container-portfolio {
+    width: 1000px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #737197;
+    background-color: rgba(88, 111, 151, 0.6);
+    text-align: center;
+    border-radius: 40px;
+}
