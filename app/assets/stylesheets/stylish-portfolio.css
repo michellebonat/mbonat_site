@@ -330,7 +330,7 @@ footer {
 
 .container-inside {
     width: 800px;
-    margin: 25px 100px 25px 100px;
+    margin: 25px auto;
     padding: 20px;
     background: #8c8ab8;
     background-color: rgba(125, 159, 215, 0.6);
