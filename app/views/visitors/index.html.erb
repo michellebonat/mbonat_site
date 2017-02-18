@@ -201,15 +201,21 @@
     </div>
 </aside>
 
-<div id='datasimply-widget'></div>
-<script>
-    (function() {
-        var ds = document.createElement('script'); ds.type = 'text/javascript'; ds.async = true;
-        ds.src = 'https://staging.datasimply.com/assets/widget-fb53ffd80bbf02c57b674f4a3e7a541e225d49b19dd3e267e064e619fa87fdce.js';
-        var s = document.getElementById('datasimply-widget')
-        s.parentNode.insertBefore(ds, s);
-    })();
-</script>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1 text-center">
+      <div id='datasimply-widget'></div>
+      <script>
+          (function() {
+              var ds = document.createElement('script'); ds.type = 'text/javascript'; ds.async = true;
+              ds.src = 'https://staging.datasimply.com/assets/widget-fb53ffd80bbf02c57b674f4a3e7a541e225d49b19dd3e267e064e619fa87fdce.js';
+              var s = document.getElementById('datasimply-widget')
+              s.parentNode.insertBefore(ds, s);
+          })();
+      </script>
+    </div>
+  </div>
+</div>
 
 <!-- Footer -->
 <section id="contact" class="footer">
