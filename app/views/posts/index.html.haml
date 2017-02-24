@@ -8,3 +8,37 @@
 					.post_wrapper
 						%h2{:class => "title\""}= link_to post.title, post
 						%p.date= post.created_at.strftime("%A, %d %b %Y %l:%M %p")
+
+%section#contact.footer
+	.container
+		.row
+			.col-lg-10.col-lg-offset-1.text-center
+				%h2
+					%strong Get In Touch
+				%h3
+					%i.fa.fa-envelope-o.fa-fw.fa-2x
+					%a{:href => "mailto:michelle.bonat@gmail.com"} Email Me
+					%br/
+					%a{:href => "https://twitter.com/mbonat"}
+						%i.fa.fa-twitter.fa-fw.fa-2x>
+						mbonat
+					\ 
+					\ 
+					%a{:href => "https://www.linkedin.com/in/mbonat"}
+						%i.fa.fa-linkedin.fa-fw.fa-2x>
+						\/mbonat
+					\ 
+					\ 
+					%a{:href => "https://github.com/michellebonat"}
+						%i.fa.fa-github.fa-fw.fa-2x>
+						michellebonat
+				%h3 Like this site? Star it on GitHub
+				%a.btn.btn-dark{:href => "https://github.com/michellebonat/mbonat_site", :target => "_blank"} Star It
+				%h4
+					%hr.small/
+				%p.text-muted Copyright © Michelle Bonat 2017
+				%p.text-muted
+					Built by Michelle with Ruby on Rails and
+					%i.fa.fa-heart
+				%br/
+				%br/
