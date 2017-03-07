@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get 'resume', to: 'visitors#resume'
   get 'sandbox', to: 'visitors#sandbox'
 
+  get 'data_simply', to: 'portfolio#data_simply'
+
   resources :posts, only: [:new, :index, :create]
   resources :posts, :path=>'', except: [:new, :index, :create]
 end
