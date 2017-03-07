@@ -1,13 +1,12 @@
-/ Page Content
 .container
 	.row
 		.col-lg-12
-			%h1.page-header
+			%h1.portfolio-header
 				Portfolio Item
 				%small Item Subheading
 	.row
 		.col-md-6
-			%img.img-responsive{:alt => "", :src => "http://placehold.it/600x390"}/
+			%img.img-responsive.shadow-image{:alt => "", :src => "http://placehold.it/600x390"}/
 		.col-md-6
 			%h3 Project Description
 			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.
@@ -22,14 +21,19 @@
 			%h3.page-header Related Projects
 		.col-sm-3.col-xs-6
 			%a{:href => "#"}
-				%img.img-responsive.portfolio-item{:alt => "", :src => "http://placehold.it/500x300"}/
+				%img.img-responsive.shadow-image.portfolio-item{:alt => "", :src => "http://placehold.it/500x300"}/
 		.col-sm-3.col-xs-6
 			%a{:href => "#"}
-				%img.img-responsive.portfolio-item{:alt => "", :src => "http://placehold.it/500x300"}/
+				%img.img-responsive.shadow-image.portfolio-item{:alt => "", :src => "http://placehold.it/500x300"}/
 		.col-sm-3.col-xs-6
 			%a{:href => "#"}
-				%img.img-responsive.portfolio-item{:alt => "", :src => "http://placehold.it/500x300"}/
+				%img.img-responsive.shadow-image.portfolio-item{:alt => "", :src => "http://placehold.it/500x300"}/
 		.col-sm-3.col-xs-6
 			%a{:href => "#"}
-				%img.img-responsive.portfolio-item{:alt => "", :src => "http://placehold.it/500x300"}/
+				%img.img-responsive.shadow-image.portfolio-item{:alt => "", :src => "http://placehold.it/500x300"}/
 	%hr/
+
+	%portfolio-footer
+		.row
+			.col-lg-12
+				%p Copyright © Michelle Bonat 2017 All Rights Reserved
