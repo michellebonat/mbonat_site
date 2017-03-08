@@ -318,6 +318,7 @@ footer {
     padding: 0px 30px 10px 30px;
 }
 
+/* These style the portfolio section on the home page */
 .container-portfolio {
     width: 1000px;
     margin: 80px auto;
@@ -350,4 +351,9 @@ footer {
 
 .btn-space {
     margin-right: 8px;
+}
+
+.navbar-default {
+    background-color: #c4c4c4;
+    border-color: #cba64b;
 }
