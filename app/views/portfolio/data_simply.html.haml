@@ -52,7 +52,7 @@
 					SEC, Twilio, Numerous financial data providers
 				%li
 					%strong Delivery:
-					Application, APIs, Widgets
+					Application, APIs, Widgets, with multiple subscriptions both free and paid
 
 			%h3
 				%strong Other
@@ -73,6 +73,8 @@
 				-#%li
 				-#	See the public repo
 				-#	= link_to "here", "http://datasimply.com/home/"
+				%br
+				%br
 
 	-#This is the related projects section which still needs to be built out
 	-#.row
@@ -91,6 +93,20 @@
 	-#	.col-sm-3.col-xs-6
 	-#		%a{:href => "#"}
 	-#			%img.img-responsive.shadow-image.portfolio-item{:alt => "", :src => "http://placehold.it/500x300"}/
+
+.container
+	.row
+		.col-lg-10.col-lg-offset-1.text-center
+			#datasimply-general-widget
+			:javascript
+				(function() {
+				    var ds = document.createElement('script'); ds.type = 'text/javascript'; ds.async = true;
+				    ds.src = 'https://app.datasimply.com/assets/general-widget-8076209247070aba4341fbb623862e8e2d5900af9e4a5e02eb2db8e531a2521e.js';
+				    var s = document.getElementById('datasimply-general-widget')
+				    s.parentNode.insertBefore(ds, s);
+				})();
+
+
 	%hr/
 
 	%portfolio-footer
