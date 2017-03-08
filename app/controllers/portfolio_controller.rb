@@ -5,7 +5,7 @@ class PortfolioController < ApplicationController
   def my_money_butler
   end
 
-  def ruby_rails_portfolio
+  def website_portfolio
   end
 
   def wikis
