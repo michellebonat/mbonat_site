@@ -93,11 +93,12 @@
                   <a href="#">
                     <img class="img-portfolio img-responsive shadow-image" src="http://i.imgur.com/5d6vZhr.jpg">
                     <h3>Code and run the business at Data Simply</h3>
-                    <a href="http://datasimply.com/" target="_blank" class="btn btn-dark btn-lg">Go There</a>
+                    <%= link_to  'Project Details',  data_simply_path,  class:  'btn btn-dark btn-lg' %>
+                    <a href="http://datasimply.com/" target="_blank" class="btn btn-dark btn-lg">Live Site</a>
                 </div>
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#myModal">
-                  Project Details
+                  Project Snapshot
                 </button>
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
