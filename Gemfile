@@ -31,6 +31,7 @@ group :development do
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
   gem 'spring-commands-rspec'
+  gem 'rails_real_favicon'
 end
 
 group :development, :test do
