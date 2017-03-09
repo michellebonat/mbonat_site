@@ -8,7 +8,7 @@ class PortfolioController < ApplicationController
   def website_portfolio
   end
 
-  def wikis
+  def blocipedia
   end
 
   def seo_ruby_rails
