@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get 'data_simply', to: 'portfolio#data_simply'
   get 'website_portfolio', to: 'portfolio#website_portfolio'
-  get 'wikis', to: 'portfolio#wikis'
+  get 'blocipedia', to: 'portfolio#blocipedia'
 
   resources :posts, only: [:new, :index, :create]
   resources :posts, :path=>'', except: [:new, :index, :create]
