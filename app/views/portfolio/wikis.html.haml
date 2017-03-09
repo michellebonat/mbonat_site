@@ -1,0 +1,114 @@
+.container
+	.row
+		.col-lg-12
+			%h1.portfolio-header
+				Blocipedia
+				%small
+					%i A wikipedia clone
+	.row
+		.col-md-6
+			%img.img-responsive.shadow-image{:alt => "", :src => "http://i.imgur.com/MqpQK2k.png"}/
+			-#%br
+			-#%img.img-responsive.shadow-image{:alt => "", :src => "http://i.imgur.com/6FrEn2d.jpg"}/
+
+		.col-md-6
+			%h3
+				%strong Project Description
+			%p	This is a wikipedia-type app to play with Ruby on Rails and some tools that go with it.
+
+			%h3
+				%strong How It Works
+			%p It has collaboration, privacy, and paid settings, uses Stripe, HAML, and more. Leverages a has many: through relationship between users and collaborators.
+			%p
+				I have
+				= link_to "open sourced the code here.", "https://github.com/michellebonat/blocipedia"
+
+			%h3
+				%strong Contribution
+			%p Solo, built as a learning project. Developed, styled, deployed.
+			%h3
+				%strong Project Details
+			%ul
+				%li
+					%strong Framework:
+					Ruby on Rails
+				%li
+					%strong Front End:
+					HTML, CSS, Javascript, JQuery
+				%li
+					%strong Templating and Presentation:
+					Haml, Bootstrap
+				%li
+					%strong Testing:
+					RSpec, Capybara, FactoryGirl, Better Errors, Pry Rails
+				%li
+					%strong Tools and Misc:
+					Stripe for payments, Devise, Launchy, Pundit, Figaro, Redcarpet, FriendlyID, Simple Form.
+				%li
+					%strong Cloud Infrastructure and DevOps:
+					Heroku
+				%li
+					%strong DB:
+					SQLite (development), PostgreSQL (production)
+				-#%li
+				-#	%strong APIs and Integrations:
+				-#	SEC, Twilio, Numerous financial data providers
+				%li
+					%strong Delivery:
+					Application
+
+			-#%h3
+			-#	%strong Other
+			-#%p We will have attached more than 40 million metadata tags to these documents.
+
+			%h3
+				%strong More Information
+			%ul
+				%li
+					See the homepage and try the demo user
+					= link_to "here", "https://mbonat-blocipedia.herokuapp.com/"
+				-#%li
+				-#	See my blog
+				-#	= link_to "here", "http://michellebonat.com/posts"
+				-#%li
+				-#	See my resume
+				-#	= link_to "here", "http://michellebonat.com/resume"
+				-#%li
+				-#	See an example portfolio page
+				-#	= link_to "here", "http://michellebonat.com/data_simply"
+				-#%li
+				-#	See the application online
+				-#	= link_to "here", "https://app.datasimply.com/"
+				-#%li
+				-#	See the widget in action
+				-#	= link_to "here", "http://datasimply.com/home/"
+				%li
+					See the public repo on GitHub
+					= link_to "here", "https://github.com/michellebonat/blocipedia"
+				%br
+				%br
+
+	-#This is the related projects section which still needs to be built out
+	-#.row
+	-#	.col-lg-12
+	-#		%h3.page-header
+	-#			%strong Related Projects
+	-#	.col-sm-3.col-xs-6
+	-#		%a{:href => "#"}
+	-#			%img.img-responsive.shadow-image.portfolio-item{:alt => "", :src => "http://placehold.it/500x300"}/
+	-#	.col-sm-3.col-xs-6
+	-#		%a{:href => "#"}
+	-#			%img.img-responsive.shadow-image.portfolio-item{:alt => "", :src => "http://placehold.it/500x300"}/
+	-#	.col-sm-3.col-xs-6
+	-#		%a{:href => "#"}
+	-#			%img.img-responsive.shadow-image.portfolio-item{:alt => "", :src => "http://placehold.it/500x300"}/
+	-#	.col-sm-3.col-xs-6
+	-#		%a{:href => "#"}
+	-#			%img.img-responsive.shadow-image.portfolio-item{:alt => "", :src => "http://placehold.it/500x300"}/
+
+	%hr/
+
+	%portfolio-footer
+		.row
+			.col-lg-12
+				%p Copyright © Michelle Bonat 2017 All Rights Reserved
