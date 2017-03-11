@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   get 'blocipedia', to: 'portfolio#blocipedia'
   get 'my_money_butler', to: 'portfolio#my_money_butler'
 
-  resources :posts, only: [:new, :index, :create]
-  resources :posts, :path=>'', except: [:new, :index, :create]
+  resources :posts, only: [:new, :index, :create, :edit, :update]
+  resources :posts, :path=>'', except: [:new, :index, :create, :edit, :update]
 end
