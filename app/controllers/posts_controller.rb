@@ -32,7 +32,7 @@ class PostsController < ApplicationController
 
   private
     def post_params
-      params.require(:post).permit(:title, :body)
+      params.require(:post).permit(:title, :body, :created_at, :updated_at, :meta_title, :meta_description, :permalink, :no_index)
     end
 
   def authenticate
