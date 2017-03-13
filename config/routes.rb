@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'website_portfolio', to: 'portfolio#website_portfolio'
   get 'blocipedia', to: 'portfolio#blocipedia'
   get 'my_money_butler', to: 'portfolio#my_money_butler'
+  get 'oracle_financial_apps', to: 'portfolio#oracle_financial_apps'
 
   resources :posts, only: [:new, :index, :create]
   resources :posts, :path=>'', except: [:new, :index, :create]
