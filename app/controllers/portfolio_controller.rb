@@ -19,4 +19,7 @@ class PortfolioController < ApplicationController
 
   def fintechsandbox
   end
+
+  def bitparrot
+  end
 end

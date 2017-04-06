@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'blocipedia', to: 'portfolio#blocipedia'
   get 'my_money_butler', to: 'portfolio#my_money_butler'
   get 'oracle_financial_apps', to: 'portfolio#oracle_financial_apps'
+  get 'bitparrot', to: 'portfolio#bitparrot'
 
   resources :posts, only: [:new, :index, :create]
   resources :posts, :path=>'', except: [:new, :index, :create]
