@@ -22,4 +22,7 @@ class PortfolioController < ApplicationController
 
   def bitparrot
   end
+
+  def stompbox_tunes
+  end
 end
