@@ -238,6 +238,11 @@ hr.small {
     margin: 0 auto;
 }
 
+.img-portfolio-white {
+    margin: 0 auto;
+    background-color: white;
+}
+
 .img-portfolio:hover {
     opacity: 0.4;
 }
