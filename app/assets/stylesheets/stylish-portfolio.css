@@ -247,6 +247,10 @@ hr.small {
     opacity: 0.4;
 }
 
+.img-size {
+    max-width: 550px;
+}
+
 /* Call to Action */
 
 .call-to-action {
