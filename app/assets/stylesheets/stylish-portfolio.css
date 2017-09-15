@@ -243,6 +243,10 @@ hr.small {
     background-color: white;
 }
 
+.img-portfolio-white:hover {
+    opacity: 0.4;
+}
+
 .img-portfolio:hover {
     opacity: 0.4;
 }
