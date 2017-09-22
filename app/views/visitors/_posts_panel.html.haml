@@ -1,14 +1,10 @@
 %section.panel.panel-default
   .panel-heading
-    .panel-title.panel-title-with-link
+    .panel-title
       %h4 Most Recent Blog Post ...
   .panel-body
-    %table.table.table-striped.dashboard-list
-      %thead
+    %tbody
+      - for post in posts
         %tr
-          %th Includes All Three Major US Exchanges
-      %tbody
-        - for post in posts
-          %tr
-            %td
-              = render partial: 'posts/post', locals: {post: post}
+          %td
+            = render partial: 'posts/post', locals: {post: post}
