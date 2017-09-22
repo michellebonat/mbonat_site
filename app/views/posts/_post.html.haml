@@ -1,5 +1,5 @@
 .row
-  .col-sm-1
+  .col-sm-2
     %h3
       = link_to @post do
         %span.glyphicon.glyphicon-star
@@ -8,6 +8,6 @@
     %p.text-muted.small.subtitle
       Posted on
       = post.created_at.strftime('%Y-%-b-%d at %I:%M %P')
-  .col-sm-3
+  .col-sm-2
     = link_to 'Read More', post, class: 'btn btn-xs btn-default'
   .clearfix
