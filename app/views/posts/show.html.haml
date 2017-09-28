@@ -12,10 +12,16 @@
 							Submitted #{time_ago_in_words(@post.created_at)} Ago
 						%h4.body
 							= markdown_to_html @post.body
+
 			%section
 				.row
 					.col-lg-10.col-lg-offset-1.text-left
-						%br
+						%h3
+						= link_to 'See All Blog Posts', posts_path, class:  'btn btn-round btn-primary'
+
+			%section
+				.row
+					.col-lg-10.col-lg-offset-1.text-left
 						%h3 Like this post? Star it on GitHub
 						%a.btn.btn-dark{:href => "https://github.com/michellebonat/mbonat_site", :target => "_blank"} Star It
 						%br
