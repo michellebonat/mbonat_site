@@ -10,21 +10,21 @@
 							= markdown_to_html @post.title
 						%p.date
 							Submitted #{time_ago_in_words(@post.created_at)} Ago
+						%h3 Share This Post
+						= render partial: 'layouts/share', locals: {message: "#{post_url(@post)}", subject: @post, url: post_url(@post)}
 						%h4.body
 							= markdown_to_html @post.body
-
-			%section
-				.row
-					.col-lg-10.col-lg-offset-1.text-left
-						%h3 Share This Post Now
+						%h3 Share This Post
 						= render partial: 'layouts/share', locals: {message: "#{post_url(@post)}", subject: @post, url: post_url(@post)}
-						= link_to 'See All Blog Posts', posts_path, class:  'btn btn-round btn-primary'
 
 			%section
 				.row
 					.col-lg-10.col-lg-offset-1.text-left
 						%h3 Like this post? Star it on GitHub
 						%a.btn.btn-dark{:href => "https://github.com/michellebonat/mbonat_site", :target => "_blank"} Star It
+						%br
+						%br
+						= link_to 'See All Blog Posts', posts_path, class:  'btn btn-round btn-primary'
 						%br
 						%br
 %section#contact.footer
