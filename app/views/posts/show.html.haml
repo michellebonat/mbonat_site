@@ -15,7 +15,7 @@
 						%h4.body
 							= markdown_to_html @post.body
 						%h3 Share This Post
-						= render partial: 'layouts/share', locals: {message: "#{post_url(@post)}", subject: @post, url: post_url(@post)}
+						= render partial: 'layouts/share', locals: {message: "#{post_url(@post)}", subject: @meta_title, url: post_url(@post)}
 
 			%section
 				.row
