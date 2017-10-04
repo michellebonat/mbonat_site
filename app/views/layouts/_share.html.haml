@@ -1,14 +1,13 @@
 %ul.share
-	%li
-		= link_to "https://twitter.com/intent/tweet?text=#{url_encode(message)}", {target: '_blank', class: 'twitter', title: 'Tweet This' } do
-			%i.fa.fa-twitter.fa-lg
-			%span Twitter
-
-	%li
-		= link_to "http://www.linkedin.com/shareArticle?mini=true&url=#{url}&title=#{url_encode(subject)}&summary=#{url_encode(message)}", { target: '_blank', class: 'linkedin', title: 'Share on LinkedIn' } do
-			%i.fa.fa-linkedin.fa-lg
-			%span LinkedIn
-	%li
-		= mail_to '', subject: subject, body: message, class: 'email', title: 'Email This' do
-			%i.fa.fa-envelope.fa-lg
-			%span Email
+	= link_to "https://twitter.com/intent/tweet?text=#{url_encode(message)}", {target: '_blank', class: 'twitter', title: 'Tweet This' } do
+		%i.fa.fa-twitter.fa-lg
+		%span Twitter
+	-#Comment the LI and email share for now, until pre-populating the subject is fixed
+	-#%li
+	-#	= link_to "http://www.linkedin.com/shareArticle?mini=true&url=#{url}&title=#{url_encode(subject)}&summary=#{url_encode(message)}", { target: '_blank', class: 'linkedin', title: 'Share on LinkedIn' } do
+	-#		%i.fa.fa-linkedin.fa-lg
+	-#		%span LinkedIn
+	-#%li
+	-#	= mail_to '', subject: subject, body: message, class: 'email', title: 'Email This' do
+	-#		%i.fa.fa-envelope.fa-lg
+	-#		%span Email
