@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   get 'oracle_financial_apps', to: 'portfolio#oracle_financial_apps'
   get 'bitparrot', to: 'portfolio#bitparrot'
   get 'stompbox_tunes', to: 'portfolio#stompbox_tunes'
-  get 'finddevs', to: 'portfolio#finddevs'
+  get 'find_devs', to: 'portfolio#find_devs'
 
   resources :posts, only: [:new, :index, :create]
   resources :posts, :path=>'', except: [:new, :index, :create]

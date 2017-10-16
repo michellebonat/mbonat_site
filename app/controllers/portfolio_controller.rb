@@ -25,4 +25,7 @@ class PortfolioController < ApplicationController
 
   def stompbox_tunes
   end
+
+  def find_devs
+  end
 end
