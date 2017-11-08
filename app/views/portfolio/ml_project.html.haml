@@ -1,0 +1,104 @@
+.container
+	.row
+		.col-lg-12
+			%h1.portfolio-header
+				Machine learning project: Deep Learning
+				%small
+					%i Using a Convolutional Neural Network to classify pets
+	.row
+		.col-md-6
+
+			-#Libs import
+			%img.img-responsive.shadow-image{:alt => "", :src => "https://i.imgur.com/fyoPXYl.png"}/
+			%small
+			Import some libraries
+			%br
+			%br
+
+			-#VGG16 sample training images which is corn
+			%img.img-responsive.shadow-image{:alt => "", :src => "https://i.imgur.com/boPbDD6.png"}/
+			%small
+			This is what the training model looks like, it is actually pictures of corn
+			%br
+			%br
+
+			-#Dog and cat classification
+			%img.img-responsive.shadow-image{:alt => "", :src => "https://i.imgur.com/prSEEov.png"}/
+			%small
+			Sorting the pets
+			%br
+			%br
+
+			-#Initial image prediction scores before tuning
+			%img.img-responsive.shadow-image{:alt => "", :src => "https://i.imgur.com/jXM4tlt.png"}/
+			%small
+			Let the tuning begin!
+			%br
+			%br
+
+		.col-md-6
+			%h3
+				%strong Project Description
+			%p Trained a model that can distinguish dogs from cats by looking at images.
+
+			%h3
+				%strong How It Works
+			%p Images are taken in from an existing dataset on Kaggle. These images are then put into 3 sets: test, training, and validation. Using the pre-trained VGG16 model, it is first run, and then fine tuned.
+			%h3
+				%strong Contribution
+			%p Built on my own as a personal project.
+
+			%h3
+				%strong Project Details
+			%ul
+				%li
+					%strong Platform:
+					Anaconda
+				%li
+					%strong Frameworks:
+					Keras, Theano, CUDA
+				-#%li
+				-#	%strong Templating and Presentation:
+				-#	Bootstrap
+				-#%li
+				-#	%strong Testing:
+				-#	RSpec, Capybara, FactoryGirl
+				%li
+					%strong Tools and Misc:
+					Jupyter notebook, including these python libraries: Matplotlib (creates plots), Numpy (for basic linear algebra), Keras (deep learning library). utils.py (for some convenient functions).
+				%li
+					%strong Cloud Infrastructure and DevOps:
+					AWS (running a P2 instance)
+				-#%li
+				-#	%strong DB:
+				-#	PostgreSQL
+				%li
+					%strong Models:
+					VGG16 pre-trained model for Keras, from ImageNet
+				-#%li
+				-#	%strong Delivery:
+				-#	Hosted by GitHub Pages
+
+			-#%h3
+			-#	%strong Notable
+			-#%p Raised seed funding. We have generated more than 40 million metadata tags on these documents.
+
+			-#%h3
+			-#	%strong More Information
+			-#%ul
+			-#	%li
+			-#		See the application online
+			-#		= link_to "here", "https://michellebonat.github.io/angular-find-devs/"
+			-#	%li
+			-#		See the public repo
+			-#		= link_to "here", "https://github.com/michellebonat/angular-find-devs"
+			-#	%br
+			-#	%br
+
+
+	%hr/
+
+	%portfolio-footer
+		.row
+			.col-lg-12
+				%p Copyright © Michelle Bonat 2017 All Rights Reserved
