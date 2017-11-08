@@ -4,16 +4,42 @@
 			%h1.portfolio-header
 				Machine learning project: Deep Learning
 				%small
-					%i Using a Convolutional Neural Network to sort the pets
+					%i Using a Convolutional Neural Network to classify pets
 	.row
 		.col-md-6
-			%img.img-responsive.shadow-image{:alt => "", :src => "https://i.imgur.com/R7DOsMG.png"}/
+
+			-#Libs import
+			%img.img-responsive.shadow-image{:alt => "", :src => "https://i.imgur.com/fyoPXYl.png"}/
+			%small
+			Import some libraries
+			%br
+			%br
+
+			-#VGG16 sample training images which is corn
+			%img.img-responsive.shadow-image{:alt => "", :src => "https://i.imgur.com/boPbDD6.png"}/
+			%small
+			This is what the training model looks like, it is actually pictures of corn
+			%br
+			%br
+
+			-#Dog and cat classification
+			%img.img-responsive.shadow-image{:alt => "", :src => "https://i.imgur.com/prSEEov.png"}/
+			%small
+			Sorting the pets
+			%br
+			%br
+
+			-#Initial image prediction scores before tuning
+			%img.img-responsive.shadow-image{:alt => "", :src => "https://i.imgur.com/jXM4tlt.png"}/
+			%small
+			Let the tuning begin!
+			%br
 			%br
 
 		.col-md-6
 			%h3
 				%strong Project Description
-			%p Trained from scratch a model that can distinguish dogs from cats by looking at images.
+			%p Trained a model that can distinguish dogs from cats by looking at images.
 
 			%h3
 				%strong How It Works
@@ -48,7 +74,7 @@
 				-#	PostgreSQL
 				%li
 					%strong Models:
-					VGG16 pre-trained model for Keras
+					VGG16 pre-trained model for Keras, from ImageNet
 				-#%li
 				-#	%strong Delivery:
 				-#	Hosted by GitHub Pages
