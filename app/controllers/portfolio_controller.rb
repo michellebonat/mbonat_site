@@ -28,4 +28,7 @@ class PortfolioController < ApplicationController
 
   def find_devs
   end
+
+  def ml_project
+  end
 end
