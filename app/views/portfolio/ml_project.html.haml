@@ -2,9 +2,9 @@
 	.row
 		.col-lg-12
 			%h1.portfolio-header
-				Find Developers Near You
+				Machine learning project: Deep Learning
 				%small
-					%i Find developers based on city and programming language
+					%i Using a Convolutional Neural Network to sort the pets
 	.row
 		.col-md-6
 			%img.img-responsive.shadow-image{:alt => "", :src => "https://i.imgur.com/R7DOsMG.png"}/
@@ -13,11 +13,11 @@
 		.col-md-6
 			%h3
 				%strong Project Description
-			%p This is a newer project, I am still building it out. This application was created to learn Angular 4 and to see who was around.
+			%p Trained from scratch a model that can distinguish dogs from cats by looking at images.
 
 			%h3
 				%strong How It Works
-			%p A user can lookup developers given a certain city and programming language combination, and drill into their profile details to see more information.
+			%p Images are taken in from an existing dataset on Kaggle. These images are then put into 3 sets: test, training, and validation. Using the pre-trained VGG16 model, it is first run, and then fine tuned.
 			%h3
 				%strong Contribution
 			%p Built on my own as a personal project.
@@ -26,48 +26,48 @@
 				%strong Project Details
 			%ul
 				%li
-					%strong Framework:
-					Angular 4
+					%strong Platform:
+					Anaconda
 				%li
-					%strong Front End:
-					Angular CLI, Node.js, TypeScript, CSS, Javascript
-				%li
-					%strong Templating and Presentation:
-					Bootstrap
+					%strong Frameworks:
+					Keras, Theano, CUDA
+				-#%li
+				-#	%strong Templating and Presentation:
+				-#	Bootstrap
 				-#%li
 				-#	%strong Testing:
 				-#	RSpec, Capybara, FactoryGirl
-				-#%li
-				-#	%strong Tools and Misc:
-				-#	SQL, SendGrid
-				-#%li
-				-#	%strong Cloud Infrastructure and DevOps:
-				-#	Hosted by GitHub Pages
+				%li
+					%strong Tools and Misc:
+					Jupyter notebook, including these python libraries: Matplotlib (creates plots), Numpy (for basic linear algebra), Keras (deep learning library). utils.py (for some convenient functions).
+				%li
+					%strong Cloud Infrastructure and DevOps:
+					AWS (running a P2 instance)
 				-#%li
 				-#	%strong DB:
 				-#	PostgreSQL
 				%li
-					%strong APIs and Integrations:
-					GitHub API
-				%li
-					%strong Delivery:
-					Hosted by GitHub Pages
+					%strong Models:
+					VGG16 pre-trained model for Keras
+				-#%li
+				-#	%strong Delivery:
+				-#	Hosted by GitHub Pages
 
 			-#%h3
 			-#	%strong Notable
 			-#%p Raised seed funding. We have generated more than 40 million metadata tags on these documents.
 
-			%h3
-				%strong More Information
-			%ul
-				%li
-					See the application online
-					= link_to "here", "https://michellebonat.github.io/angular-find-devs/"
-				%li
-					See the public repo
-					= link_to "here", "https://github.com/michellebonat/angular-find-devs"
-				%br
-				%br
+			-#%h3
+			-#	%strong More Information
+			-#%ul
+			-#	%li
+			-#		See the application online
+			-#		= link_to "here", "https://michellebonat.github.io/angular-find-devs/"
+			-#	%li
+			-#		See the public repo
+			-#		= link_to "here", "https://github.com/michellebonat/angular-find-devs"
+			-#	%br
+			-#	%br
 
 
 	%hr/
