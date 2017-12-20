@@ -1,0 +1,22 @@
+<%= form_for @contact do |f| %>
+	<% if flash[:error].present? %>
+		<p> flash[:error]</p>
+	<% end %>
+	<%= f.label :name %> <br>
+	<%= f.text_field :name, required: true %>
+
+	<br>
+	<%= f.label :email %> <br>
+	<%= f.text_field :email, required: true %>
+
+	<br>
+	<%= f.label :message %> <br>
+	<%= f.text_area :message, as: :text %>
+
+
+	<%= f.label :nickname %> <br>
+	<%= f.text_field :nickname, hint: 'If you are human leave this field blank' %>
+
+
+	<%= f.submit 'Send Message', class: "button" %>
+	<% end %>

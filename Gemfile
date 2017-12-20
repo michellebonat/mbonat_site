@@ -16,6 +16,7 @@ gem 'sendgrid'
 gem 'simple_form'
 gem 'google-analytics-rails', '1.1.0'
 gem 'friendly_id'
+gem 'mail_form'
 
 group :development do
   gem 'web-console', '~> 2.0'
