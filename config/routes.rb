@@ -22,4 +22,5 @@ Rails.application.routes.draw do
 
   resources :posts, only: [:new, :index, :create]
   resources :posts, :path=>'', except: [:new, :index, :create]
+  resources :contacts, only: [:new, :create]
 end
