@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get 'find_devs', to: 'portfolio#find_devs'
   get 'ml_project', to: 'portfolio#ml_project'
   get 'contact-me', to: 'messages#new', as: 'new_message'
+  post 'contact-me', to: 'messages#create', as: 'create_message'
 
   resources :posts, only: [:new, :index, :create]
   resources :posts, :path=>'', except: [:new, :index, :create]
