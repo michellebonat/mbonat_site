@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get 'stompbox_tunes', to: 'portfolio#stompbox_tunes'
   get 'find_devs', to: 'portfolio#find_devs'
   get 'ml_project', to: 'portfolio#ml_project'
+  get 'contact-me', to: 'messages#new', as: 'new_message'
 
   resources :posts, only: [:new, :index, :create]
   resources :posts, :path=>'', except: [:new, :index, :create]
