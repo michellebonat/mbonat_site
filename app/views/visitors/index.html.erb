@@ -55,22 +55,48 @@
   </div>
 </section>
 
+<!--&lt;!&ndash; Call to ACTION (Latest news section) &ndash;&gt;-->
+<!--&lt;!&ndash; Call to Action &ndash;&gt;-->
+<!--<aside class="call-to-action bg-primary">-->
+  <!--<div class="container">-->
+    <!--<div class="row">-->
+      <!--<div class="text-vertical-center">-->
+      <!--<h2>News: See me quoted in Huffington Post on 2018 Tech Trends Predictions</h2>-->
+      <!--<a href="https://www.huffingtonpost.com/entry/2018-tech-predictions-from-industry-leaders_us_5a3965bfe4b0578d1beb73a5#"><i class="fa fa-arrow-circle-right"></i>Read It</a>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</aside>-->
+
 <!-- Callout -->
 <aside class="callout">
-    <div class="text-vertical-center">
-      <br>
-      <br>
-      <br>
-      <h2>Notes from my coding and other adventures</h2>
-      <br>
-      <%= render partial: 'posts_panel', locals: {posts: @posts} %>
-      <h2>
-        <%= link_to "See All My Blog Posts", posts_path %> <i class="fa fa-arrow-circle-right"></i>
-       <br>
-       <br>
-       <br>
+  <div class="text-vertical-center">
+    <div class="container container-portfolio shadow">
+      <div class="row">
+
+        <h2>News: See me quoted in Huffington Post 2018 Tech Trends Predictions</h2>
+        <a href="https://www.huffingtonpost.com/entry/2018-tech-predictions-from-industry-leaders_us_5a3965bfe4b0578d1beb73a5#" target="_blank" class="btn btn-dark btn-lg">Read It</a>
+
+      </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <%= render partial: 'posts_panel', locals: {posts: @posts} %>
+    <h2>
+      <%= link_to "See All My Blog Posts", posts_path %> <i class="fa fa-arrow-circle-right"></i>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+  </div>
 </aside>
+
+
 
 <!-- Portfolio -->
 <section id="portfolio" class="portfolio">
