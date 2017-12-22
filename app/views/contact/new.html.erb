@@ -1,0 +1,37 @@
+<div class="container panel panel-resume">
+  <div class="row">
+    <div class="col-lg-12 text-left">
+      <section id="about" class="about">
+
+      <%= form_for @contact do |f| %>
+        <% if flash[:error].present? %>
+          <p> flash[:error]</p>
+        <% end %>
+        <br>
+        <br>
+        <br>
+          <h2><strong>Get In Touch</strong></h2>
+          <h3>Not a form filler? Tweet me</h3>
+          <a href="https://twitter.com/mbonat"><i class="fa fa-twitter fa-fw fa-2x"></i>mbonat</a>
+        <br>
+        <br>
+        <%= f.label :name %> <br>
+        <%= f.text_field :name, required: true %>
+
+        <br>
+        <%= f.label :email %> <br>
+        <%= f.text_field :email, required: true %>
+
+        <br>
+        <%= f.label :message %> <br>
+        <%= f.text_area :message, as: :text %>
+
+        <br>
+        <br>
+
+        <%= f.submit 'Send Message', class: "btn btn-dark" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>

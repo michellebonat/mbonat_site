@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'contact/new'
+
   # root to: 'visitors#index'
   devise_for :users
   resources :users
@@ -20,4 +22,5 @@ Rails.application.routes.draw do
 
   resources :posts, only: [:new, :index, :create]
   resources :posts, :path=>'', except: [:new, :index, :create]
+  resources :contacts, only: [:new, :create]
 end
