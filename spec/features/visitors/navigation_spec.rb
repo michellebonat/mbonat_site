@@ -11,8 +11,10 @@ feature 'Navigation links', :devise do
   scenario 'view navigation links' do
     visit root_path
     expect(page).to have_content 'Home'
-    expect(page).to have_content 'Sign in'
-    expect(page).to have_content 'Sign up'
+    expect(page).to have_content 'Blog'
+    expect(page).to have_content 'About'
+    expect(page).to have_content 'Portfolio'
+    expect(page).to have_content 'Resume'
   end
 
 end
