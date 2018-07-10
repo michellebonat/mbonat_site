@@ -31,8 +31,6 @@ To create an initial admin user, fire up `rails c` and do the following:
 
 - `rails s`
 
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Running the tests
 
 There are pre-seeded rspec tests. To run these it is 'rspec spec' from your command line. 
