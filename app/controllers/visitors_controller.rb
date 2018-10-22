@@ -5,7 +5,7 @@ class VisitorsController < ApplicationController
   end
 
   def resume
-    @meta_title = "Software engineer full stack ruby rails Michelle Bonat"
+    @meta_title = "Data and AI leader and engineer"
   end
 
   def sandbox
