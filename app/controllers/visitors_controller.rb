@@ -8,6 +8,10 @@ class VisitorsController < ApplicationController
     @meta_title = "Data and AI leader and engineer"
   end
 
+  def speak
+    @meta_title = "Speaker on Data and AI"
+  end
+
   def sandbox
   end
 end

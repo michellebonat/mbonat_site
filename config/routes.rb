@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   root to: 'visitors#index'
   get 'resume', to: 'visitors#resume'
+  get 'speak', to: 'visitors#speak'
   get 'sandbox', to: 'visitors#sandbox'
 
   get 'data_simply', to: 'portfolio#data_simply'
